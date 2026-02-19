@@ -23,7 +23,7 @@ A solução gráfica é indicada pelo área sombreada da seguinte imagem:
 
 ![alt text](image.png)
 
-Essa é o chamado conjunto de valores viáveis ou a chamada região de soluções viáveis.
+Essa image representa o chamado conjunto de valores viáveis ou a chamada região de soluções viáveis.
 
 Para criar a imagem correspondente para o nosso problema, o programa solucao_grafica.py faz a plotagem equivalente para as nossas equações e está disponível no seguinte [notebook do colab](https://colab.research.google.com/drive/1MbcLXCKaOfEIxdnHXV_3lLVQJul9sd7L?usp=sharing)
 

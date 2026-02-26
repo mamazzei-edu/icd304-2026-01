@@ -19,7 +19,7 @@ $$f(x, y) = 4x^3 + 7y^2 - 5$$
 
 Calcule $\frac{\partial f}{\partial x}$ e $\frac{\partial f}{\partial y}$ para a função:
 
-$$f(x, y) = 5x^2y^3$$
+$$f(x, y)=5x^2y^3$$
 
 **Dica:** Aqui a função não é uma soma entre os termos independentes, mas uma multiplicação. Veja a regra da cadeia para esse caso.
 

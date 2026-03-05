@@ -19,17 +19,17 @@ plt.figure(figsize=(10, 8))
 
 # 4. Plotando o Mapa Topográfico (Curvas de Nível)
 # Usamos levels para definir quantas "fatias" queremos ver
-contorno = plt.contour(X, Y, Z, levels=30, cmap='viridis')
+contorno = plt.contour(X, Y, Z, levels=30, cmap='inferno') ## outros valores magma, plasma, inferno, cvidis, make, rocket, gist_earth, terrain, ocean, gist_stern, gist_rainbow
 plt.clabel(contorno, inline=True, fontsize=9) # Coloca os valores de Z nas linhas
 
 # 5. O Ponto Atual (Onde nosso "robô" está)
-p_x, p_y = 4, 3
+p_x, p_y = 10, 17
 plt.plot(p_x, p_y, 'ro', markersize=8, label=f'Ponto Atual P({p_x}, {p_y})')
 
 # 6. O Vetor Gradiente (Calculado manualmente ou com SymPy)
 # Derivadas: df/dx = 2x, df/dy = 4y. No ponto (4,3) -> [?, ?]
-grad_x = # ?
-grad_y = # ?
+grad_x = 20# ?
+grad_y = 68# ?
 
 # Plotando a Bússola (A seta do Gradiente)
 # Usamos quiver para desenhar o vetor com precisão matemática

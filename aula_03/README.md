@@ -31,4 +31,19 @@
 **O que faremos na Aula Prática:**
 No laboratório, vamos resolver esse problema em Python e focar em ler a mente do Simplex. Vamos aprender a extrair do Python não apenas a resposta final, mas o valor de cada Variável de Folga ($s$), para responder ao gerente de TI: "Qual servidor precisará de upgrade primeiro: CPU, RAM ou Storage?".
 
+**A formulação matemática**
+
+**Função Objetivo:** $\max Z = 50x_1 + 30x_2 + 40x_3$
+
+**Restrições Originais $\rightarrow$ Forma Padrão (com Folgas):**
+
+1. **CPU:** $2x_1 + 1x_2 + 1x_3 + s_1 = 150$
+2. **RAM:** $1x_1 + 2x_2 + 1x_3 + s_2 = 160$
+3. **Storage:** $0x_1 + 1x_2 + 2x_3 + s_3 = 100$
+
+
+**Desafio adicional - Aula 03**
+
+Se o algoritmo decidir que não vamos produzir nenhuma VM ($x_1=0, x_2=0, x_3=0$), qual é o valor das folgas?" (Resposta: $s_1=150$, $s_2=160$, $s_3=100$. Ou seja, 100% de ociosidade. Esse é exatamente o vértice inicial do Simplex!)
+
 

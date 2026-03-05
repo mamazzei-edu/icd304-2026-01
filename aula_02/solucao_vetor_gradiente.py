@@ -23,7 +23,7 @@ print(f"Vetor Gradiente Simbólico: {gradiente}")
 
 # 5. Avaliando o Gradiente em um Ponto Específico: P(4, 3)
 # Usamos o método .subs() para substituir os símbolos por valores numéricos
-ponto = {x: 4, y: 3}
+ponto = {x: 10, y: 17}
 
 grad_x_num = df_dx.subs(ponto)
 grad_y_num = df_dy.subs(ponto)

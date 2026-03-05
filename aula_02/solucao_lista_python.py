@@ -24,3 +24,5 @@ print(f"h'(x) = {h_deriv}")
 print(f"i'(x) = {i_deriv}")
 print(f"j'(x) = {j_deriv}")
 print(f"k'(x) = {k_deriv}")
+
+

@@ -41,4 +41,10 @@ Considerando os resultados obtidos qual a decisão a tomar?
 Há algo que possa impactar positivamente o resultado?
 
 
+**Soluções**
 
+Na pasta você irá encontrar 4 soluções para o problema da semana:
+- resposta_aula_04a.py - Solução utilizando o preço sombra para avaliar a oferta
+- resposta_aula_04b.py - Solução realizada como se tivessemos as 10 cpus adicionais para comparar o valor do resultado obtido
+- resposta_aula_04c.py - Contraproposta com 10Gb de storage adicionais, além das 10 CPUs com o custo de R$250,00 pelo pacote
+- resposta_aula_04d.py - Avaliação do problema considerando o aumento do valor das instâncias de Data Analytics para R$45,00. Nesse caso, há alteração do consumo dos recursos e dos preços-sombra, gerando novo contexto para decisão.

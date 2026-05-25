@@ -2,7 +2,7 @@
 
 Imagine que na GreenLog, o custo real é dado por: 
 
-$f(x, y)_{global} = f(x, y)_{S10} + \cos(5x) \cdot \sin(5y)$
+$$f(x, y)_{\text{global}} = f(x, y)_{\text{S10}} + \cos(5x) \cdot \sin(5y)$$
 
 
  Isso transforma o "vale liso" em um terreno altamente rugoso (não-convexo), repleto de falsos mínimos locais (armadilhas).

@@ -9,7 +9,9 @@ from scipy.optimize import minimize, differential_evolution, LinearConstraint
 def f_rugged_cost(p):
     x, y = p
     # Base da Semana 10
-    base = np.exp(x - 2) + np.exp(y - 1) + np.log(1 + x**2 + y**2) + (x - 2 * y) ** 2
+    base = (
+        np.exp(x - 2) + np.exp(y - 1) + np.log(1 + x**2 + y**2) + (x - 2 * y) ** 2 + 10
+    )
     # Ruído de Alta Frequência (Cria os mínimos locais/armadilhas)
     rugosidade = 2.0 * np.cos(5 * x) * np.sin(5 * y)
     return base + rugosidade
@@ -32,7 +34,7 @@ limites = [(-2.0, 4.0), (-2.0, 4.0)]
 # 3. EXECUÇÃO 1: OTIMIZAÇÃO LOCAL (KKT / SLSQP)
 # ==========================================
 # Simulando um aluno que escolheu um ponto inicial "azarado"
-p_inicial = [1.5, 1.5]
+p_inicial = [30.0, 2.0]
 
 t0 = time.time()
 res_local = minimize(

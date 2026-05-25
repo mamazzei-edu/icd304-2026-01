@@ -1,21 +1,26 @@
 import numpy as np
 from scipy.optimize import minimize
 
+
 # 1. Função de Custo (Semana 9 - Estabilizada)
 def f_cost(p):
     x, y = p
-    return np.exp(x - 2) + np.exp(y - 1) + np.log(1 + x**2 + y**2) + (x - 2*y)**2
+    return (
+        np.exp(x - 2) + np.exp(y - 1) + np.log(1 + x**2 + y**2) + (x - 2 * y) ** 2 + 10
+    )
+
 
 # 2. Definição da Restrição (Deve ser escrita como g(x) >= 0 no SciPy)
 # x + 2y >= 0
 def constraint1(p):
-    return p[0] + 2*p[1]
+    return p[0] + 2 * p[1]
 
-con = {'type': 'ineq', 'fun': constraint1}
+
+con = {"type": "ineq", "fun": constraint1}
 
 # 3. Execução da Otimização
 p_init = [3, 2]
-res = minimize(f_cost, p_init, method='SLSQP', constraints=[con])
+res = minimize(f_cost, p_init, method="SLSQP", constraints=[con])
 
 # 4. Extração dos Resultados e Multiplicadores
 # No SLSQP, os multiplicadores de Lagrange (mu) estão em res.maxcv ou via KKT manual

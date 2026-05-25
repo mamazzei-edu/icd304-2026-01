@@ -3,7 +3,7 @@ from sympy import symbols, exp, log, diff, lambdify
 
 # 1. PREPARAÇÃO (O Cérebro Simbólico)
 x_s, y_s = symbols('x y')
-f_sym = exp(x_s - 2) + exp(y_s - 1) - log(1 + x_s**2 + y_s**2) + (x_s - 2*y_s)**2
+f_sym = exp(x_s - 2) + exp(y_s - 1) - log(1 + x_s**2 + y_s**2) + (x_s - 2*y_s)**2 + 10
 grad_sym = [diff(f_sym, var) for var in (x_s, y_s)]
 
 f_num = lambdify((x_s, y_s), f_sym, 'numpy')
